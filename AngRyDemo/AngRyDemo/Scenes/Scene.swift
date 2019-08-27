@@ -30,4 +30,21 @@ enum Scene: Int, CaseIterable {
             case .motionCapture: return "Motion Capture"
         }
     }
+    
+    var storyboardName: String? {
+        switch self {
+            case .planeDetection: return "PlaneDetection"
+            case .lightEstimation: return nil
+            case .imageRecognition: return nil
+            case .faceTracking: return nil
+            case .collaborativeSessions: return nil
+            case .simultaneous: return nil
+            case .peopleOcclusion: return nil
+            case .motionCapture: return nil
+        }
+    }
+    
+    var viewControllerIdentifier: String? {
+        return storyboardName
+    }
 }

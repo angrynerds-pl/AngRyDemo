@@ -22,7 +22,17 @@ class MainViewController: UIViewController {
 }
 
 extension MainViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let scene = Scene(rawValue: indexPath.row),
+            let storyboardName = scene.storyboardName,
+            let viewControllerIdentifier = scene.viewControllerIdentifier else {
+                return
+        }
+        let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerIdentifier)
+        viewController.title = scene.title
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 }
 
 extension MainViewController: UITableViewDataSource {
@@ -39,5 +49,9 @@ extension MainViewController: UITableViewDataSource {
         cell.setup(for: scene)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return tableView.frame.height / CGFloat(Scene.allCases.count)
     }
 }
