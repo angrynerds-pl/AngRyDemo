@@ -34,7 +34,7 @@ enum Scene: Int, CaseIterable {
     var storyboardName: String? {
         switch self {
             case .planeDetection: return "PlaneDetection"
-            case .lightEstimation: return nil
+            case .lightEstimation: return "LightEstimation"
             case .imageRecognition: return nil
             case .faceTracking: return nil
             case .collaborativeSessions: return nil

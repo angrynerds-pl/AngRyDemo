@@ -17,6 +17,9 @@
 		B2D59E882315DCF100AE98BE /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D59E872315DCF100AE98BE /* Scene.swift */; };
 		B2D59E8B2315E16400AE98BE /* PlaneDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D59E8A2315E16400AE98BE /* PlaneDetectionViewController.swift */; };
 		B2D59E8D2315E18000AE98BE /* PlaneDetection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D59E8C2315E18000AE98BE /* PlaneDetection.storyboard */; };
+		B2D59E8F2315E79D00AE98BE /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D59E8E2315E79D00AE98BE /* art.scnassets */; };
+		B2D59E922315E85000AE98BE /* LightEstimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D59E912315E85000AE98BE /* LightEstimationViewController.swift */; };
+		B2D59E962315E87A00AE98BE /* LightEstimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D59E952315E87A00AE98BE /* LightEstimation.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		B2D59E872315DCF100AE98BE /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		B2D59E8A2315E16400AE98BE /* PlaneDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneDetectionViewController.swift; sourceTree = "<group>"; };
 		B2D59E8C2315E18000AE98BE /* PlaneDetection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlaneDetection.storyboard; sourceTree = "<group>"; };
+		B2D59E8E2315E79D00AE98BE /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		B2D59E912315E85000AE98BE /* LightEstimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightEstimationViewController.swift; sourceTree = "<group>"; };
+		B2D59E952315E87A00AE98BE /* LightEstimation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LightEstimation.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		B2D59E6B2315D9C900AE98BE /* AngRyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B2D59E8E2315E79D00AE98BE /* art.scnassets */,
 				B2D59E802315DA5A00AE98BE /* Scenes */,
 				B2D59E6C2315D9C900AE98BE /* AppDelegate.swift */,
 				B2D59E6E2315D9C900AE98BE /* SceneDelegate.swift */,
@@ -76,6 +83,7 @@
 		B2D59E802315DA5A00AE98BE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B2D59E902315E83300AE98BE /* Light Estimation */,
 				B2D59E892315E14200AE98BE /* Plane Detection */,
 				B2D59E822315DA7300AE98BE /* Main */,
 				B2D59E812315DA6000AE98BE /* Splash */,
@@ -117,6 +125,15 @@
 				B2D59E8C2315E18000AE98BE /* PlaneDetection.storyboard */,
 			);
 			path = "Plane Detection";
+			sourceTree = "<group>";
+		};
+		B2D59E902315E83300AE98BE /* Light Estimation */ = {
+			isa = PBXGroup;
+			children = (
+				B2D59E912315E85000AE98BE /* LightEstimationViewController.swift */,
+				B2D59E952315E87A00AE98BE /* LightEstimation.storyboard */,
+			);
+			path = "Light Estimation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,8 +194,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2D59E962315E87A00AE98BE /* LightEstimation.storyboard in Resources */,
 				B2D59E792315D9CB00AE98BE /* Splash.storyboard in Resources */,
 				B2D59E762315D9CB00AE98BE /* Assets.xcassets in Resources */,
+				B2D59E8F2315E79D00AE98BE /* art.scnassets in Resources */,
 				B2D59E742315D9C900AE98BE /* Main.storyboard in Resources */,
 				B2D59E8D2315E18000AE98BE /* PlaneDetection.storyboard in Resources */,
 			);
@@ -192,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2D59E712315D9C900AE98BE /* MainViewController.swift in Sources */,
+				B2D59E922315E85000AE98BE /* LightEstimationViewController.swift in Sources */,
 				B2D59E6D2315D9C900AE98BE /* AppDelegate.swift in Sources */,
 				B2D59E882315DCF100AE98BE /* Scene.swift in Sources */,
 				B2D59E852315DC9200AE98BE /* MainTableViewCell.swift in Sources */,
