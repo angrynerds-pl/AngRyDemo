@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.15"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Recognition View Controller-->
+        <scene sceneID="KYL-mk-5AY">
+            <objects>
+                <viewController storyboardIdentifier="ImageRecognition" id="MSv-6G-npw" customClass="ImageRecognitionViewController" customModule="AngRyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bdr-3a-Xbt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHW-C3-ze4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZHW-C3-ze4" secondAttribute="bottom" id="6st-gb-NZR"/>
+                            <constraint firstItem="ZHW-C3-ze4" firstAttribute="top" secondItem="bdr-3a-Xbt" secondAttribute="top" id="KYn-dN-rJo"/>
+                            <constraint firstItem="ZHW-C3-ze4" firstAttribute="trailing" secondItem="kQ2-CN-zPs" secondAttribute="trailing" id="nk3-b6-P2T"/>
+                            <constraint firstItem="ZHW-C3-ze4" firstAttribute="leading" secondItem="kQ2-CN-zPs" secondAttribute="leading" id="nx3-Us-r7O"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kQ2-CN-zPs"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="ZHW-C3-ze4" id="wPG-ba-rLo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BIo-Bf-JsR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-217.39130434782609" y="-48.214285714285715"/>
+        </scene>
+    </scenes>
+</document>

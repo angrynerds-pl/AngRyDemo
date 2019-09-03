@@ -10,6 +10,8 @@
 		B2B18843231DB25B0026C66F /* FaceTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B18842231DB25B0026C66F /* FaceTrackingViewController.swift */; };
 		B2B18845231DB2A40026C66F /* FaceTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B18844231DB2A40026C66F /* FaceTracking.storyboard */; };
 		B2B18848231F066E0026C66F /* SCNReferenceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B18847231F066E0026C66F /* SCNReferenceNode.swift */; };
+		B2B1884B231F0CCF0026C66F /* ImageRecognition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B1884A231F0CCF0026C66F /* ImageRecognition.storyboard */; };
+		B2B1884D231F0CE10026C66F /* ImageRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B1884C231F0CE10026C66F /* ImageRecognitionViewController.swift */; };
 		B2D59E6D2315D9C900AE98BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D59E6C2315D9C900AE98BE /* AppDelegate.swift */; };
 		B2D59E6F2315D9C900AE98BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D59E6E2315D9C900AE98BE /* SceneDelegate.swift */; };
 		B2D59E712315D9C900AE98BE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D59E702315D9C900AE98BE /* MainViewController.swift */; };
@@ -29,6 +31,8 @@
 		B2B18842231DB25B0026C66F /* FaceTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingViewController.swift; sourceTree = "<group>"; };
 		B2B18844231DB2A40026C66F /* FaceTracking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FaceTracking.storyboard; sourceTree = "<group>"; };
 		B2B18847231F066E0026C66F /* SCNReferenceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNReferenceNode.swift; sourceTree = "<group>"; };
+		B2B1884A231F0CCF0026C66F /* ImageRecognition.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageRecognition.storyboard; sourceTree = "<group>"; };
+		B2B1884C231F0CE10026C66F /* ImageRecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRecognitionViewController.swift; sourceTree = "<group>"; };
 		B2D59E692315D9C900AE98BE /* AngRyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngRyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D59E6C2315D9C900AE98BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2D59E6E2315D9C900AE98BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		B2B18849231F0CB50026C66F /* Image Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				B2B1884A231F0CCF0026C66F /* ImageRecognition.storyboard */,
+				B2B1884C231F0CE10026C66F /* ImageRecognitionViewController.swift */,
+			);
+			path = "Image Recognition";
+			sourceTree = "<group>";
+		};
 		B2D59E602315D9C900AE98BE = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +120,7 @@
 		B2D59E802315DA5A00AE98BE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B2B18849231F0CB50026C66F /* Image Recognition */,
 				B2B18840231DB2380026C66F /* Face Tracking */,
 				B2D59E902315E83300AE98BE /* Light Estimation */,
 				B2D59E892315E14200AE98BE /* Plane Detection */,
@@ -225,6 +239,7 @@
 				B2D59E762315D9CB00AE98BE /* Assets.xcassets in Resources */,
 				B2D59E8F2315E79D00AE98BE /* art.scnassets in Resources */,
 				B2D59E742315D9C900AE98BE /* Main.storyboard in Resources */,
+				B2B1884B231F0CCF0026C66F /* ImageRecognition.storyboard in Resources */,
 				B2D59E8D2315E18000AE98BE /* PlaneDetection.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +259,7 @@
 				B2B18848231F066E0026C66F /* SCNReferenceNode.swift in Sources */,
 				B2D59E852315DC9200AE98BE /* MainTableViewCell.swift in Sources */,
 				B2D59E6F2315D9C900AE98BE /* SceneDelegate.swift in Sources */,
+				B2B1884D231F0CE10026C66F /* ImageRecognitionViewController.swift in Sources */,
 				B2D59E8B2315E16400AE98BE /* PlaneDetectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -35,7 +35,7 @@ enum Scene: Int, CaseIterable {
         switch self {
             case .planeDetection: return "PlaneDetection"
             case .lightEstimation: return "LightEstimation"
-            case .imageRecognition: return nil
+            case .imageRecognition: return "ImageRecognition"
             case .faceTracking: return "FaceTracking"
             case .collaborativeSessions: return nil
             case .simultaneous: return nil
