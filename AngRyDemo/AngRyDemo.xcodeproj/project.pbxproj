@@ -25,6 +25,11 @@
 		B2D59E8F2315E79D00AE98BE /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D59E8E2315E79D00AE98BE /* art.scnassets */; };
 		B2D59E922315E85000AE98BE /* LightEstimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D59E912315E85000AE98BE /* LightEstimationViewController.swift */; };
 		B2D59E962315E87A00AE98BE /* LightEstimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D59E952315E87A00AE98BE /* LightEstimation.storyboard */; };
+		B2E497EC231F158800CD917D /* SimultaneousFrontAndBackCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E497EB231F158800CD917D /* SimultaneousFrontAndBackCameraViewController.swift */; };
+		B2E497EE231F159100CD917D /* SimultaneousFrontAndBackCamera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E497ED231F159100CD917D /* SimultaneousFrontAndBackCamera.storyboard */; };
+		B2E497F0231F1D7200CD917D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E497EF231F1D7200CD917D /* String.swift */; };
+		B2E497F2231F1D9400CD917D /* EmojiNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E497F1231F1D9400CD917D /* EmojiNode.swift */; };
+		B2E497F4231F1F9E00CD917D /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E497F3231F1F9E00CD917D /* Mood.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +53,11 @@
 		B2D59E8E2315E79D00AE98BE /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		B2D59E912315E85000AE98BE /* LightEstimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightEstimationViewController.swift; sourceTree = "<group>"; };
 		B2D59E952315E87A00AE98BE /* LightEstimation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LightEstimation.storyboard; sourceTree = "<group>"; };
+		B2E497EB231F158800CD917D /* SimultaneousFrontAndBackCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimultaneousFrontAndBackCameraViewController.swift; sourceTree = "<group>"; };
+		B2E497ED231F159100CD917D /* SimultaneousFrontAndBackCamera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SimultaneousFrontAndBackCamera.storyboard; sourceTree = "<group>"; };
+		B2E497EF231F1D7200CD917D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		B2E497F1231F1D9400CD917D /* EmojiNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiNode.swift; sourceTree = "<group>"; };
+		B2E497F3231F1F9E00CD917D /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				B2B18847231F066E0026C66F /* SCNReferenceNode.swift */,
+				B2E497EF231F1D7200CD917D /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -120,6 +131,7 @@
 		B2D59E802315DA5A00AE98BE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B2E497EA231F155700CD917D /* Simultaneous Front and Back Camera */,
 				B2B18849231F0CB50026C66F /* Image Recognition */,
 				B2B18840231DB2380026C66F /* Face Tracking */,
 				B2D59E902315E83300AE98BE /* Light Estimation */,
@@ -173,6 +185,17 @@
 				B2D59E952315E87A00AE98BE /* LightEstimation.storyboard */,
 			);
 			path = "Light Estimation";
+			sourceTree = "<group>";
+		};
+		B2E497EA231F155700CD917D /* Simultaneous Front and Back Camera */ = {
+			isa = PBXGroup;
+			children = (
+				B2E497EB231F158800CD917D /* SimultaneousFrontAndBackCameraViewController.swift */,
+				B2E497ED231F159100CD917D /* SimultaneousFrontAndBackCamera.storyboard */,
+				B2E497F1231F1D9400CD917D /* EmojiNode.swift */,
+				B2E497F3231F1F9E00CD917D /* Mood.swift */,
+			);
+			path = "Simultaneous Front and Back Camera";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +264,7 @@
 				B2D59E742315D9C900AE98BE /* Main.storyboard in Resources */,
 				B2B1884B231F0CCF0026C66F /* ImageRecognition.storyboard in Resources */,
 				B2D59E8D2315E18000AE98BE /* PlaneDetection.storyboard in Resources */,
+				B2E497EE231F159100CD917D /* SimultaneousFrontAndBackCamera.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,9 +279,13 @@
 				B2D59E712315D9C900AE98BE /* MainViewController.swift in Sources */,
 				B2D59E922315E85000AE98BE /* LightEstimationViewController.swift in Sources */,
 				B2D59E6D2315D9C900AE98BE /* AppDelegate.swift in Sources */,
+				B2E497EC231F158800CD917D /* SimultaneousFrontAndBackCameraViewController.swift in Sources */,
 				B2D59E882315DCF100AE98BE /* Scene.swift in Sources */,
+				B2E497F0231F1D7200CD917D /* String.swift in Sources */,
 				B2B18848231F066E0026C66F /* SCNReferenceNode.swift in Sources */,
+				B2E497F2231F1D9400CD917D /* EmojiNode.swift in Sources */,
 				B2D59E852315DC9200AE98BE /* MainTableViewCell.swift in Sources */,
+				B2E497F4231F1F9E00CD917D /* Mood.swift in Sources */,
 				B2D59E6F2315D9C900AE98BE /* SceneDelegate.swift in Sources */,
 				B2B1884D231F0CE10026C66F /* ImageRecognitionViewController.swift in Sources */,
 				B2D59E8B2315E16400AE98BE /* PlaneDetectionViewController.swift in Sources */,

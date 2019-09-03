@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.15"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Simultaneous Front And Back Camera View Controller-->
+        <scene sceneID="Pai-xq-GhL">
+            <objects>
+                <viewController storyboardIdentifier="SimultaneousFrontAndBackCamera" id="NXf-Nc-klM" customClass="SimultaneousFrontAndBackCameraViewController" customModule="AngRyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qzj-gK-aXy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUi-Yn-1F5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0w3-J8-15a" firstAttribute="trailing" secondItem="aUi-Yn-1F5" secondAttribute="trailing" id="Cgt-4R-AWS"/>
+                            <constraint firstAttribute="bottom" secondItem="aUi-Yn-1F5" secondAttribute="bottom" id="Dr7-hu-ng8"/>
+                            <constraint firstItem="aUi-Yn-1F5" firstAttribute="top" secondItem="qzj-gK-aXy" secondAttribute="top" id="as0-57-DJp"/>
+                            <constraint firstItem="aUi-Yn-1F5" firstAttribute="leading" secondItem="0w3-J8-15a" secondAttribute="leading" id="jJj-Z3-7Z2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0w3-J8-15a"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="aUi-Yn-1F5" id="3Yg-k5-RmG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C2j-Wg-dqY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
+        </scene>
+    </scenes>
+</document>
