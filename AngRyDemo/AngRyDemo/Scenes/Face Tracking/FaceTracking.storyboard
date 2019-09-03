@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.15"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Face Tracking View Controller-->
+        <scene sceneID="a5d-Mw-LQj">
+            <objects>
+                <viewController storyboardIdentifier="FaceTracking" id="phA-FI-PIn" customClass="FaceTrackingViewController" customModule="AngRyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ADa-eC-aCy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7B-56-ZZu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LTN-Kc-wJs">
+                                <rect key="frame" x="16" y="815" width="51" height="31"/>
+                            </switch>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14H-EO-esI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="570-x0-Vih">
+                                    <rect key="frame" x="0.0" y="0.0" width="441.66666666666663" height="8999"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Face tracking is not supported on this device" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="33u-IR-qyB">
+                                            <rect key="frame" x="32" y="0.0" width="377.66666666666669" height="8999"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="33u-IR-qyB" secondAttribute="bottom" id="8Vy-is-tgD"/>
+                                        <constraint firstItem="33u-IR-qyB" firstAttribute="top" secondItem="570-x0-Vih" secondAttribute="top" id="9o7-DO-paf"/>
+                                        <constraint firstAttribute="trailing" secondItem="33u-IR-qyB" secondAttribute="trailing" constant="32" id="Bm3-bW-NR7"/>
+                                        <constraint firstItem="33u-IR-qyB" firstAttribute="leading" secondItem="570-x0-Vih" secondAttribute="leading" constant="32" id="sIL-WT-c4q"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="r7B-56-ZZu" firstAttribute="trailing" secondItem="8Rv-F8-AI5" secondAttribute="trailing" id="0Af-lb-UWQ"/>
+                            <constraint firstItem="14H-EO-esI" firstAttribute="top" secondItem="ADa-eC-aCy" secondAttribute="top" id="EUi-ZJ-hUb"/>
+                            <constraint firstItem="14H-EO-esI" firstAttribute="centerY" secondItem="ADa-eC-aCy" secondAttribute="centerY" id="Nbc-Gu-PC9"/>
+                            <constraint firstItem="r7B-56-ZZu" firstAttribute="leading" secondItem="8Rv-F8-AI5" secondAttribute="leading" id="NpA-NM-ATz"/>
+                            <constraint firstItem="r7B-56-ZZu" firstAttribute="top" secondItem="ADa-eC-aCy" secondAttribute="top" id="QrY-aJ-a9b"/>
+                            <constraint firstItem="LTN-Kc-wJs" firstAttribute="leading" secondItem="8Rv-F8-AI5" secondAttribute="leading" constant="16" id="SOn-74-3Vw"/>
+                            <constraint firstItem="14H-EO-esI" firstAttribute="centerX" secondItem="ADa-eC-aCy" secondAttribute="centerX" id="a0G-oc-GE0"/>
+                            <constraint firstAttribute="bottom" secondItem="14H-EO-esI" secondAttribute="bottom" id="fM0-nT-f4I"/>
+                            <constraint firstItem="8Rv-F8-AI5" firstAttribute="bottom" secondItem="LTN-Kc-wJs" secondAttribute="bottom" constant="16" id="szR-UA-3YT"/>
+                            <constraint firstAttribute="bottom" secondItem="r7B-56-ZZu" secondAttribute="bottom" id="ume-Un-EWh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Rv-F8-AI5"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="r7B-56-ZZu" id="UiE-1V-Mj1"/>
+                        <outlet property="switch" destination="LTN-Kc-wJs" id="H23-1z-dhN"/>
+                        <outlet property="unsupportedInfoView" destination="14H-EO-esI" id="8ah-Rw-HmV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ghj-p5-iHj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-114.40000000000001" y="154.27286356821591"/>
+        </scene>
+    </scenes>
+</document>

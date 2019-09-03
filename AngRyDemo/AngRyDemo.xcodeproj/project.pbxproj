@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2B18843231DB25B0026C66F /* FaceTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B18842231DB25B0026C66F /* FaceTrackingViewController.swift */; };
+		B2B18845231DB2A40026C66F /* FaceTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B18844231DB2A40026C66F /* FaceTracking.storyboard */; };
+		B2B18848231F066E0026C66F /* SCNReferenceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B18847231F066E0026C66F /* SCNReferenceNode.swift */; };
 		B2D59E6D2315D9C900AE98BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D59E6C2315D9C900AE98BE /* AppDelegate.swift */; };
 		B2D59E6F2315D9C900AE98BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D59E6E2315D9C900AE98BE /* SceneDelegate.swift */; };
 		B2D59E712315D9C900AE98BE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D59E702315D9C900AE98BE /* MainViewController.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B2B18842231DB25B0026C66F /* FaceTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingViewController.swift; sourceTree = "<group>"; };
+		B2B18844231DB2A40026C66F /* FaceTracking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FaceTracking.storyboard; sourceTree = "<group>"; };
+		B2B18847231F066E0026C66F /* SCNReferenceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNReferenceNode.swift; sourceTree = "<group>"; };
 		B2D59E692315D9C900AE98BE /* AngRyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngRyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D59E6C2315D9C900AE98BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2D59E6E2315D9C900AE98BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +57,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2B18840231DB2380026C66F /* Face Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				B2B18842231DB25B0026C66F /* FaceTrackingViewController.swift */,
+				B2B18844231DB2A40026C66F /* FaceTracking.storyboard */,
+			);
+			path = "Face Tracking";
+			sourceTree = "<group>";
+		};
+		B2B18846231F06550026C66F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B2B18847231F066E0026C66F /* SCNReferenceNode.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B2D59E602315D9C900AE98BE = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +95,7 @@
 			children = (
 				B2D59E8E2315E79D00AE98BE /* art.scnassets */,
 				B2D59E802315DA5A00AE98BE /* Scenes */,
+				B2B18846231F06550026C66F /* Extensions */,
 				B2D59E6C2315D9C900AE98BE /* AppDelegate.swift */,
 				B2D59E6E2315D9C900AE98BE /* SceneDelegate.swift */,
 				B2D59E752315D9CB00AE98BE /* Assets.xcassets */,
@@ -83,6 +107,7 @@
 		B2D59E802315DA5A00AE98BE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B2B18840231DB2380026C66F /* Face Tracking */,
 				B2D59E902315E83300AE98BE /* Light Estimation */,
 				B2D59E892315E14200AE98BE /* Plane Detection */,
 				B2D59E822315DA7300AE98BE /* Main */,
@@ -194,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B18845231DB2A40026C66F /* FaceTracking.storyboard in Resources */,
 				B2D59E962315E87A00AE98BE /* LightEstimation.storyboard in Resources */,
 				B2D59E792315D9CB00AE98BE /* Splash.storyboard in Resources */,
 				B2D59E762315D9CB00AE98BE /* Assets.xcassets in Resources */,
@@ -210,10 +236,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B18843231DB25B0026C66F /* FaceTrackingViewController.swift in Sources */,
 				B2D59E712315D9C900AE98BE /* MainViewController.swift in Sources */,
 				B2D59E922315E85000AE98BE /* LightEstimationViewController.swift in Sources */,
 				B2D59E6D2315D9C900AE98BE /* AppDelegate.swift in Sources */,
 				B2D59E882315DCF100AE98BE /* Scene.swift in Sources */,
+				B2B18848231F066E0026C66F /* SCNReferenceNode.swift in Sources */,
 				B2D59E852315DC9200AE98BE /* MainTableViewCell.swift in Sources */,
 				B2D59E6F2315D9C900AE98BE /* SceneDelegate.swift in Sources */,
 				B2D59E8B2315E16400AE98BE /* PlaneDetectionViewController.swift in Sources */,

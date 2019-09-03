@@ -36,7 +36,7 @@ enum Scene: Int, CaseIterable {
             case .planeDetection: return "PlaneDetection"
             case .lightEstimation: return "LightEstimation"
             case .imageRecognition: return nil
-            case .faceTracking: return nil
+            case .faceTracking: return "FaceTracking"
             case .collaborativeSessions: return nil
             case .simultaneous: return nil
             case .peopleOcclusion: return nil
