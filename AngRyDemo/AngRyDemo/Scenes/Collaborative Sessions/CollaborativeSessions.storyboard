@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.15"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Collaborative Sessions View Controller-->
+        <scene sceneID="2Hg-l9-FKz">
+            <objects>
+                <viewController storyboardIdentifier="CollaborativeSessions" id="NnL-wJ-Wd8" customClass="CollaborativeSessionsViewController" customModule="AngRyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="avc-DK-MG2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfx-8J-4j7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Up3-qV-n0m" appends="YES" id="8Gg-c6-hu0"/>
+                                </connections>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="cfx-8J-4j7" secondAttribute="bottom" id="IjC-O1-wCZ"/>
+                            <constraint firstItem="cfx-8J-4j7" firstAttribute="leading" secondItem="5Uo-0s-WKx" secondAttribute="leading" id="Jei-T6-str"/>
+                            <constraint firstItem="cfx-8J-4j7" firstAttribute="trailing" secondItem="5Uo-0s-WKx" secondAttribute="trailing" id="bRO-w5-h94"/>
+                            <constraint firstItem="cfx-8J-4j7" firstAttribute="top" secondItem="avc-DK-MG2" secondAttribute="top" id="duw-ts-4QE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Uo-0s-WKx"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="cfx-8J-4j7" id="6jr-1B-9vD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LHG-Lf-N3p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Up3-qV-n0m">
+                    <connections>
+                        <action selector="handleSceneTap:" destination="NnL-wJ-Wd8" id="ycS-Kc-NgE"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="40.579710144927539" y="154.6875"/>
+        </scene>
+    </scenes>
+</document>
